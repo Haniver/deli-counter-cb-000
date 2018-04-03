@@ -13,6 +13,9 @@ def line(katz_deli)
 end
 
 def take_a_number(katz_deli, person_joining)
-  turn = katz_deli.find_index(person_joining) + 1
-  puts "Welcome, #{person_joining}. You are number #{turn} in line."
+  if katz_deli.include?(person_joining)
+    turn = katz_deli.find_index(person_joining) + 1
+    puts "Welcome, #{person_joining}. You are number #{turn} in line."
+  else
+    katz_deli << person_joining
 end

@@ -1,8 +1,8 @@
-def line(line_array)
-  if line_array.count > 0
+def line(katz_deli)
+  if katz_deli.count > 0
     output ="The line is currently:"
     counter = 1
-    line_array.each do |person|
+    katz_deli.each do |person|
       output += " #{counter}. #{person}"
       counter += 1
     end
@@ -10,4 +10,9 @@ def line(line_array)
   else
     puts "The line is currently empty."
   end
+end
+
+def take_a_number(katz_deli, person_joining)
+  turn = katz_deli.find_index(person_joining) + 1
+  puts "Welcome, #{person_joining}. You are number #{turn} in line."
 end

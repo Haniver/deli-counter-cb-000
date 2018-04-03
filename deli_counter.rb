@@ -13,7 +13,7 @@ def line(katz_deli)
 end
 
 def take_a_number(katz_deli, person_joining)
-  turn = katz_deli.include?(person_joining) ? katz_deli.find_index(person_joining) + 1 : 1
+  turn = katz_deli.include?(person_joining) ? katz_deli.find_index(person_joining) + 1 : katz_deli.count + 1
   puts "Welcome, #{person_joining}. You are number #{turn} in line."
   katz_deli << person_joining
   katz_deli

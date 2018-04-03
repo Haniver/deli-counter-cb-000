@@ -4,6 +4,7 @@ def line(line_array)
     counter = 1
     line_array.each do |person|
       output += "#{counter}. #{person} "
+      counter += 1
     end
     puts output
   else

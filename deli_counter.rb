@@ -8,4 +8,5 @@ def line(line_array)
     puts output
   else
     puts "The line is currently empty."
+  end
 end

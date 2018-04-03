@@ -18,5 +18,6 @@ def take_a_number(katz_deli, person_joining)
     puts "Welcome, #{person_joining}. You are number #{turn} in line."
   else
     katz_deli << person_joining
+    return katz_deli
   end
 end
